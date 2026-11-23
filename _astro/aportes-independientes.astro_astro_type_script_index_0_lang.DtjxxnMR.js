@@ -1,4 +1,4 @@
-import{t as e}from"./parametros.D-N9iKIV.js";import{r as t,t as n}from"./calculos.BiVvzAHZ.js";var r=document.getElementById(`form-indep`),i=document.getElementById(`res-indep`),a=(e,t,n=``)=>`<tr class="${n}"><td>${e}</td><td>${t}</td></tr>`;function o(){let r=Number(document.getElementById(`ingreso`).value),o=document.getElementById(`arl`).value||null;try{let s=n(r,e,{nivelArl:o});i.innerHTML=`<table>
+import{t as e}from"./parametros.D-N9iKIV.js";import{i as t,t as n}from"./calculos.WcqYF_fw.js";var r=document.getElementById(`form-indep`),i=document.getElementById(`res-indep`),a=(e,t,n=``)=>`<tr class="${n}"><td>${e}</td><td>${t}</td></tr>`;function o(){let r=Number(document.getElementById(`ingreso`).value),o=document.getElementById(`arl`).value||null;try{let s=n(r,e,{nivelArl:o});i.innerHTML=`<table>
         ${a(`IBC (base de cotización)`,t(s.ibc))}
         ${a(`Salud (12,5 %)`,t(s.salud))}
         ${a(`Pensión (16 %)`,t(s.pension))}
