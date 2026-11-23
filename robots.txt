@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://asperezm.github.io/sitemap-index.xml
+Sitemap: https://laplataclara.com/sitemap-index.xml
