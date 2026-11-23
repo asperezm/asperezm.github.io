@@ -1,0 +1,1 @@
+var e=[`enero`,`febrero`,`marzo`,`abril`,`mayo`,`junio`,`julio`,`agosto`,`septiembre`,`octubre`,`noviembre`,`diciembre`],t=[`domingo`,`lunes`,`martes`,`miércoles`,`jueves`,`viernes`,`sábado`];function n(n,r=!0){let[i,a,o]=n.split(`-`).map(Number);return`${t[new Date(Date.UTC(i,a-1,o)).getUTCDay()]} ${o} de ${e[a-1]}${r?` de ${i}`:``}`}export{n as t};
