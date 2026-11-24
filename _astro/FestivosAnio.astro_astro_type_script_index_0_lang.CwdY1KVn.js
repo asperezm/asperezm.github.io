@@ -1,0 +1,3 @@
+import{o as e}from"./calculos.Dn6Z4uVm.js";import{t}from"./fechas.DWM42LbW.js";var n=new Date,r=new Date(Date.UTC(n.getFullYear(),n.getMonth(),n.getDate())).toISOString().slice(0,10);document.querySelectorAll(`[data-fecha]`).forEach(e=>{(e.dataset.fecha||``)<r&&(e.classList.add(`pasado`),e.querySelector(`.meta`)?.insertAdjacentHTML(`beforeend`,` <span class="ya-paso">Ya pasó</span>`))});var i=[...e(n.getFullYear()),...e(n.getFullYear()+1)].find(e=>e.fecha>=r);if(i){let e=Math.round((Date.parse(i.fecha)-Date.parse(r))/864e5),n=document.getElementById(`proximo`);n.innerHTML=`<p class="etq">${e===0?`Hoy es festivo`:`Próximo festivo`}</p>
+      <p class="grande">${i.nombre}</p>
+      <p>${t(i.fecha)}${e>0?` · faltan <strong>${e} día${e===1?``:`s`}</strong>`:``}</p>`}
